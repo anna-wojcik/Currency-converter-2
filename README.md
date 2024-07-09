@@ -35,7 +35,7 @@ Project is in progress and it is the result of learning programming.
 To do:
 * Downloading current courses from the NBP website
 
-## Acknowledgements
+## Acknowledgments
 This project was inspired by the course "Frontend Developer from the basis" by online programming school YouCode. 
 
 ## Author
