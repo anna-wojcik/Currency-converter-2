@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <link rel="icon" href="images/M.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="js-body">
+    <header class="header">
+        <div class="header__title">Kalkulator walut</div>
+        <div class="js-themeButton header__switch">
+            <div class="js-circleMove header__circle"></div>
+            <div class="header__moon"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form class="js-form form">
+                <div class="form__div form__div--borderBottom">
+                    <div class="js-textResult form__div--text"></div>
+                </div>
+                <fieldset class="form__fieldset">
+                    <p class="form__paragraph">
+                        <label class="form__label">
+                            <input class="js-amountFirst form__input" name="amountFirst" type="number" min="1"
+                                step="0.01" autofocus>
+                            <select class="js-currencyFirst form__select" name="currencyFirst">
+                                <option value="EUR">EUR - Unia Europejska</option>
+                                <option value="PLN" selected>PLN - Złoty</option>
+                                <option value="USD">USA - Dolar amerykański</option>
+                                <option value="GBP">GBP - Funt brytyjski</option>
+                                <option value="CHF">CHF - Frank szwajcarski</option>
+                                <option value="AUD">AUD - Dolar australijski</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <label class="form__label">
+                            <input class="js-amountSecond form__input" name="amountSecond" type="number" min="1"
+                                step="0.01">
+                            <select class="js-currencySecond form__select" name="currencySecond">
+                                <option value="EUR" selected>EUR - Unia Europejska</option>
+                                <option value="PLN">PLN - Złoty</option>
+                                <option value="USD">USA - Dolar amerykański</option>
+                                <option value="GBP">GBP - Funt brytyjski</option>
+                                <option value="CHF">CHF - Frank szwajcarski</option>
+                                <option value="AUD">AUD - Dolar australijski</option>
+                            </select>
+                        </label>
+                    </p>
+                </fieldset>
+                <div class="form__div form__div--borderTop">
+                    <div class="js-textRate form__div--text"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">© Copywrite 2024 by Anna Wójcik</footer>
+</body>
+
+</html>
